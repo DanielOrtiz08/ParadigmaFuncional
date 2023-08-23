@@ -15,7 +15,7 @@ def display_primes_in_gui():
     end = int(entry_end.get())
     
     primes = find_primes_in_range(start, end)
-    result_label.config(text=f"Números primos encontrados: {', '.join(map(str, primes))}")
+    result_label.config(text=f"\nNúmeros primos encontrados:\n {', '.join(map(str, primes))}")
 
 # Crear la ventana de la aplicación
 app = tk.Tk()
